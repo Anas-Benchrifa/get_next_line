@@ -6,7 +6,7 @@
 /*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 22:33:33 by mac               #+#    #+#             */
-/*   Updated: 2024/11/21 13:27:47 by mac              ###   ########.fr       */
+/*   Updated: 2024/11/21 13:48:15 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	index_s1 = -1;
 	if (!s1 || !s2)
 		return (NULL);
-	join = (char *)malloc((ft_strlen(s2) + ft_strlen(s2) + 1));
+	join = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!join)
 		return (NULL);
 	while (s1[++index_s1])
