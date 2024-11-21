@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/19 22:33:33 by mac               #+#    #+#             */
-/*   Updated: 2024/11/21 13:27:47 by mac              ###   ########.fr       */
+/*   Created: 2024/11/21 10:46:01 by mac               #+#    #+#             */
+/*   Updated: 2024/11/21 10:46:31 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ char	*ft_strjoin(char *s1, char *s2)
 		s1[0] = '\0';
 	}
 	index_s1 = -1;
+	index_s2 = 0;
 	if (!s1 || !s2)
 		return (NULL);
 	join = (char *)malloc((ft_strlen(s2) + ft_strlen(s2) + 1));
@@ -54,7 +55,6 @@ char	*ft_strjoin(char *s1, char *s2)
 		return (NULL);
 	while (s1[++index_s1])
 		join[index_s1] = s1[index_s1];
-	index_s2 = 0;
 	while (s2[index_s2])
 		join[index_s1++] = s2[index_s2++];
 	join[index_s1] = '\0';
